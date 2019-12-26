@@ -3,10 +3,20 @@ using System.Collections.Generic;
 
 namespace WorkflowCore.Models
 {
+    /// <summary>
+    /// 执行结果，
+    /// </summary>
     public class ExecutionResult
     {
+
+        /// <summary>
+        /// 是否继续前进
+        /// </summary>
         public bool Proceed { get; set; }
 
+        /// <summary>
+        /// 输出的值
+        /// </summary>
         public object OutcomeValue { get; set; }
 
         public TimeSpan? SleepFor { get; set; }
@@ -33,6 +43,11 @@ namespace WorkflowCore.Models
             OutcomeValue = outcome;
         }
 
+        /// <summary>
+        /// 得到一个执行结果：value 为输出值，继续执行为真
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static ExecutionResult Outcome(object value)
         {
             return new ExecutionResult()
@@ -42,6 +57,10 @@ namespace WorkflowCore.Models
             };
         }
 
+        /// <summary>
+        /// 返回一个执行结果：输出值为空，继续执行为真
+        /// </summary>
+        /// <returns></returns>
         public static ExecutionResult Next()
         {
             return new ExecutionResult()

@@ -1,6 +1,6 @@
 # Hello World Sample
 
-Illustrates the basic usage of the fluent API for defining workflows.
+Illustrates(หตร๗) the basic usage of the fluent API for defining workflows.
 
 ```C#
 public class HelloWorldWorkflow : IWorkflow

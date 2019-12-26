@@ -7,7 +7,7 @@ using WorkflowCore.Models;
 
 namespace WorkflowCore.Sample01.Steps
 {
-    public class HelloWorld : StepBody
+    public class HelloWorldStep : StepBody
     {
         public override ExecutionResult Run(IStepExecutionContext context)
         {

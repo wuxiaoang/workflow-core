@@ -8,14 +8,14 @@ using WorkflowCore.Models;
 
 namespace WorkflowCore.Sample01.Steps
 {
-    public class GoodbyeWorld : StepBody
+    public class GoodbyeWorldStep : StepBody
     {
 
         private ILogger _logger;
 
-        public GoodbyeWorld(ILoggerFactory loggerFactory)
+        public GoodbyeWorldStep(ILoggerFactory loggerFactory)
         {
-            _logger = loggerFactory.CreateLogger<GoodbyeWorld>();
+            _logger = loggerFactory.CreateLogger<GoodbyeWorldStep>();
         }
 
         public override ExecutionResult Run(IStepExecutionContext context)

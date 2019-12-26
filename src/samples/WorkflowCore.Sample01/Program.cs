@@ -35,7 +35,7 @@ namespace WorkflowCore.Sample01
             services.AddLogging();
             services.AddWorkflow();
             //services.AddWorkflow(x => x.UseMongoDB(@"mongodb://localhost:27017", "workflow"));
-            services.AddTransient<GoodbyeWorld>();
+            services.AddTransient<GoodbyeWorldStep>();
             
             var serviceProvider = services.BuildServiceProvider();
 
