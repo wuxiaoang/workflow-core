@@ -44,7 +44,7 @@ namespace WorkflowCore.Models
         }
 
         /// <summary>
-        /// 得到一个执行结果：value 为输出值，继续执行为真
+        /// 得到一个执行结果：OutcomeValue = value，Proceed = true
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
